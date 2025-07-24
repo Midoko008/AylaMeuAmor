@@ -80,7 +80,7 @@ export default function Perfil() {
   }
 
   return (
-    <div>
+    <div className="tela-perfil">
       <div className="perfil-container">
         <h1>Perfil de {perfil.nome}</h1>
 

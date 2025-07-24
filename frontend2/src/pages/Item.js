@@ -105,7 +105,7 @@ export default function Item() {
 
       {!noCarrinho && (
         <button
-          className="botao-perfil"
+          className="botao-no-item"
           onClick={() => {
             fetch('http://localhost:5000/carrinho', {
               method: 'POST',
@@ -129,7 +129,7 @@ export default function Item() {
 
       {noCarrinho && (
         <button
-          className="botao-perfil"
+          className="botao-no-item"
           onClick={() => {
             fetch(`http://localhost:5000/carrinho/${produto.id}`, {
               method: 'DELETE',
@@ -144,7 +144,7 @@ export default function Item() {
               })
               .catch(() => alert('Erro ao remover do carrinho'));
           }}
-          style={{ backgroundColor: '#dc3545' }}
+          style={{ backgroundColor: '#f37bbf' }}
         >
           Remover do Carrinho
         </button>
@@ -153,7 +153,7 @@ export default function Item() {
       {podeDeletar && (
         <button
           className="botao-perfil"
-          style={{ backgroundColor: '#b22222', marginTop: 20 }}
+          style={{ backgroundColor: '#f35b9f', marginTop: 20 }}
           onClick={deletarProduto}
         >
           Deletar Produto

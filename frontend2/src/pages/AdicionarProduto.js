@@ -102,8 +102,8 @@ export default function AdicionarProduto() {
         <div style={{ marginTop: 20 }}>
           <button type="button" onClick={() => setMostrarCategorias(!mostrarCategorias)} style={{ padding: '8px 12px', borderRadius: 6 }}>
             {categoriaId
-              ? `Categoria Selecionada: ${categorias.find(cat => cat.id === parseInt(categoriaId))?.nome}`
-              : 'Selecionar Categoria'}
+              ? `Obra Selecionada: ${categorias.find(cat => cat.id === parseInt(categoriaId))?.nome}`
+              : 'Selecionar Obra'}
           </button>
 
           {mostrarCategorias && (
@@ -165,7 +165,7 @@ export default function AdicionarProduto() {
           )}
         </div>
 
-        <button type="submit" style={{ marginTop: 20 }}>Salvar Produto</button>
+        <button type="submit" style={{ marginTop: 20 }}>Salvar Figure</button>
       </form>
 
       <button onClick={() => navigate('/paginaInicial')} style={{
